@@ -7,7 +7,7 @@
 	error_reporting (E_ALL & ~ E_NOTICE & ~ E_DEPRECATED);
 	header('Content-Type: text/html; charset="utf-8"');
 	ini_set('default_charset','UTF-8');
-	
+	header("Access-Control-Allow-Origin:http://localhost:8100");
 	//conecta com o banco de dados
 	$host ='localhost';
 	$user ='root';
@@ -79,5 +79,5 @@
 			</tbody>
 		</table>	
 	</body>
-	 <a href="http://localhost:8106"><button style="font-weight: bold; font-size: 50px; color: white;">Voltar para a tela de inicio</button></a>
+	 <a href="http://localhost:8100"><button style="font-weight: bold; font-size: 50px; color: white;">Voltar para a tela de inicio</button></a>
 </html>
